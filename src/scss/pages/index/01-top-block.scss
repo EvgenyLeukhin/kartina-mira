@@ -6,7 +6,8 @@
 
 // top-block //
 .top-block {
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); // top-block height on mobile
   position: relative;
   z-index: 1;
   background-image: url(../../img/bg-top.png);

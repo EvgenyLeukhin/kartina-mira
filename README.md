@@ -13,3 +13,6 @@ sitekey: 6LdQiscUAAAAAOJucWIvRM-Z6MKGyoS2XW78T7mh
 
 eugeny.leukhin@stellarsolvers.com
 sitekey: 6LffjccUAAAAAGU7F9nJCealLAGMZ1H68RKwCj-0
+
+// compress images
+// cyrillic font
