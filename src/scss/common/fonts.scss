@@ -1,0 +1,89 @@
+// SF Pro Display (400)
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay'), local('SF_Pro_Display'),
+       url('../../fonts/SFProDisplay/400/SFProDisplay-Regular.woff2') format('woff2'),
+       url('../../fonts/SFProDisplay/400/SFProDisplay-Regular.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// SF Pro Display (500)
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay'), local('SF_Pro_Display'),
+       url('../../fonts/SFProDisplay/500/SFProDisplay-Medium.woff2') format('woff2'),
+       url('../../fonts/SFProDisplay/500/SFProDisplay-Medium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// SF Pro Display (600)
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay'), local('SF_Pro_Display'),
+       url('../../fonts/SFProDisplay/600/SFProDisplay-Semibold.woff2') format('woff2'),
+       url('../../fonts/SFProDisplay/600/SFProDisplay-Semibold.woff2') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+// SF Pro Display (700)
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display'), local('SFProDisplay'), local('SF_Pro_Display'),
+       url('../../fonts/SFProDisplay/700/SFProDisplay-Bold.woff2') format('woff2'),
+       url('../../fonts/SFProDisplay/700/SFProDisplay-Bold.woff2') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Montserrat (300)
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Light'),
+      //  url('../../fonts/SFProDisplay/500/Montserrat-Medium.woff') format('woff2'),
+       url('../../fonts/Montserrat/300/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Montserrat (400)
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Regular'),
+      //  url('../../fonts/SFProDisplay/500/Montserrat-Medium.woff') format('woff2'),
+       url('../../fonts/Montserrat/400/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Montserrat (500)
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Medium'),
+      //  url('../../fonts/SFProDisplay/500/Montserrat-Medium.woff') format('woff2'),
+       url('../../fonts/Montserrat/500/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// // Montserrat (600)
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: local('Montserrat'), local('Montserrat-SemiBold'),
+//       //  url('../../fonts/SFProDisplay/500/Montserrat-Medium.woff') format('woff2'),
+//        url('../../fonts/Montserrat/600/Montserrat-SemiBold.woff') format('woff');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// // Montserrat (700)
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: local('Montserrat Bold'), local('Montserrat-Bold'),
+//       //  url('../../fonts/Montserrat/700/Montserrat-Bold.woff2') format('woff2'),
+//        url('../../fonts/Montserrat/700/Montserrat-Bold.woff') format('woff');
+//   font-weight: 700;
+//   font-style: normal;
+// }
