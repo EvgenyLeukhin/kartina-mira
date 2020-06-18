@@ -23,11 +23,6 @@ module.exports = {
   // input-output
   entry: {
     index:    `${jsPath}/index.js`,
-    solution: `${jsPath}/solution.js`,
-    about:    `${jsPath}/about.js`,
-    contact:  `${jsPath}/contact.js`,
-    service:  `${jsPath}/service.js`,
-    privacy:  `${jsPath}/privacy.js`,
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -79,7 +74,7 @@ module.exports = {
 
     // HTML - MPA //
     new HtmlWebpackPlugin({
-      title: 'GRC | Home page',
+      title: 'Картина мира | Главная',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/index.html`,
       filename: 'index.html',

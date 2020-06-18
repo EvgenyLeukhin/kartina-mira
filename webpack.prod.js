@@ -30,11 +30,6 @@ module.exports = {
   // input-output
   entry: {
     index:    `${jsPath}/index.js`,
-    solution: `${jsPath}/solution.js`,
-    about:    `${jsPath}/about.js`,
-    contact:  `${jsPath}/contact.js`,
-    service:  `${jsPath}/service.js`,
-    privacy:  `${jsPath}/privacy.js`
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -45,9 +40,11 @@ module.exports = {
   module: {
     rules: [
       // JS //
-      { test: /\.js$/,
+      {
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader' },
+        use: 'babel-loader'
+      },
 
       // CSS //
       {

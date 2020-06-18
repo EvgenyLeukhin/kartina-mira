@@ -1,255 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%= htmlWebpackPlugin.options.title %></title>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__content">
-        <a href="index.html" class="header__logo">GRC-NOW</a>
+    <div class="header__container">
+      <ul class="header__nav">
+        <li><a href="#">Наши картины</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
 
-        <nav class="header__nav">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="solution.html">Solution</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav>
+      <a href="#" class="header__logo">Картина мира</a>
 
-        <a href="#" class="btn js-modal-get-started">Get started</a>
-      </div>
+      <ul class="header__links">
+        <li><a href="mailto:info@kartinamira.com">info@kartinamira.com</a></li>
+        <li><a href="tel:+73833195908">+7(383)&nbsp;319-59-08</a></li>
+        <li><a href="tel:+74992557677">+7(499)&nbsp;255-76-77</a></li>
+      </ul>
+
+      <a href="#" class="header__burger js-burger"></a>
+
+      <nav class="header__mobile-menu">
+        <ul class="mobile-nav">
+          <li><a href="#">Our movies</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <ul class="mobile-links">
+          <li><a href="mailto:info@kartinamira.com">info@kartinamira.com</a></li>
+          <li><a href="tel:+74992557677">+7(499)&nbsp;255-76-77</a></li>
+          <li><a href="tel:+73833195908">+7(383)&nbsp;319-59-08</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-
-  <main>
-    <section class="top">
-      <div class="container center">
-        <h2>We Simplify Complex IT GRC Problem</h2>
-        <a class="btn" href="#" data-izimodal-open="#modal-youtube">How does the system work?</a>
-      </div>
-    </section>
-
-    <section class="welcome">
-      <div class="container mask">
-        <div class="content">
-          <h2>Welcome to GRC-Now</h2>
-          <p>Providers of innovative, yet an effective IT GRC Solution to discerned Customers</p>
-          <a class="btn  js-modal-get-started" href="#">Get started</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="dashboard">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">Dashboard</h2>
-          <ul class="dot-list">
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="it-risk-register">
-      <div class="container">
-        <h2 class="with-ico">IT Risk Register</h2>
-        <ul>
-          <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-          <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-          <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-          <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="it-asset-register">
-      <div class="container">
-        <h2 class="with-ico">IT Asset Register</h2>
-        <ul>
-          <li>Does your Organization recognize the importance of maintaining a&nbsp;current portfolio of all your IT Assets?</li>
-          <li>Do the users know, whom to reach for support through escalation?</li>
-          <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-          <li>Our solution provides these and more...</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="treatments">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">Treatments</h2>
-          <ul class="dot-list">
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="bia">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">BIA</h2>
-          <p>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? Do the IT AssetStakeholders access to current information about the state of the IT Asset?Do the IT Asset Stakeholders access to current information about the state of the IT Asset? Do the IT AssetStakeholders access to current information about the state of the IT Asset?</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">Policy Content Management</h2>
-          <ul class="dot-list">
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="policy-2">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">Policy Exception Management</h2>
-          <ul class="dot-list">
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Does your Organization recognize the importance of maintaining a current portfolio of all your IT Assets?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset?</li>
-            <li>Do the IT Asset Stakeholders access to current information about the state of the IT Asset? </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="blue">
-      <div class="container">
-        <div class="content">
-          <h2>Are you frustrated to implement or maintain your Enterprise IT GRC Solution?</h2>
-          <p class="blue__p1">Believe us we had been there <br>and had been there long enough.</p>
-          <p class="blue__p2">We managed to emerge as a successful<br> IT GRC Solution provider, just to let</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="moon">
-      <div class="container mask">
-        <div class="content">
-          <h2 class="with-ico">All the Tools You Need to Regain Your Sleepless Nights</h2>
-
-          <p>GRC-Now is a comprehensive IT Governance solution that establishes an holistic view of all of the IT Assets, Vendors, Security Policy, Policy Exception Management and Risk Management. Solution built to scale based on your organizational size and needs, embedded with distributed information-ownership and fully automated with workflows that spins around gets traction on traditionally complex project management processes</p>
-
-          <p>GRC-Now will remind policy owners, when it is time review, will notify them, whenever any new policy-exception has been submitted for review. GRC-Now will remind Risk and Treatment owners to provide status updates on set frequency. GRC-Now will maintain the record-level permissions that align with the organizational structure so that Organizational hierarchical and Business Unit-level privacy can be maintained</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="welcome2">
-      <div class="container mask">
-        <div class="content">
-          <h2>Welcome to GRC-Now</h2>
-          <p>Providers of innovative, yet an effective IT GRC Solution to discerned Customers</p>
-          <a class="btn js-modal-get-started" href="#">Get started</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <a href="index.html" class="footer__logo">GRC-NOW</a>
-
-        <nav class="footer__nav">
-          <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="solution.html">Solution</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </nav>
-
-        <a href="#" class="btn js-modal-get-started">Get started</a>
-      </div>
-
-      <div class="footer__bottom">
-        <ul class="footer__links">
-          <li><a href="service.html">Terms of service</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-        </ul>
-
-        <span class="footer__copyright">© 2019 GRC-NOW</span>
-      </div>
-    </div>
-  </footer>
-
-  <div id="modal-youtube"></div>
-
-  <div id="modal-get-started" class="modal-get-started">
-    <div class="modal-get-started__close"></div>
-
-    <form
-      action=""
-      method="POST"
-      id="modal-get-started__form"
-      class="modal-get-started__form"
-      autocomplete="on"
-    >
-      <h2>Get started</h2>
-      <div class="wrapper">
-        <div>
-          <label for="modal-get-started__name">Name</label>
-          <input
-            type="text"
-            id="modal-get-started__name"
-            name="name"
-            placeholder="Enter name"
-            pattern="[A-Za-z0-9]+"
-            required
-          >
-        </div>
-
-        <div>
-          <label for="modal-get-started__email">Email</label>
-          <input
-            type="text"
-            id="modal-get-started__email"
-            name="email"
-            placeholder="Enter email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            required
-          >
-        </div>
-      </div>
-
-      <!-- eugeny.leukhin@stellarsolvers.com localhost-->
-      <!-- sitekey: 6LdQiscUAAAAAOJucWIvRM-Z6MKGyoS2XW78T7mh -->
-
-      <div class="g-recaptcha" data-sitekey="6LdQiscUAAAAAOJucWIvRM-Z6MKGyoS2XW78T7mh"></div>
-
-      <div class="right">
-        <input id="modal-get-started__submit" type="submit" class="btn" value="Get started">
-      </div>
-    </form>
-
-    <div class="modal-get-started__success">
-      <h2>Thank you!</h2>
-      <p>Our manager will contact you by email</p>
-      <a href="#" class="js-send-another-one">Send another one</a>
-    </div>
-  </div>
-
+  <main></main>
+  <footer></footer>
 </body>
 </html>
