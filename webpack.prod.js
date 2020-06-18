@@ -117,51 +117,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // solution.html
-    new HtmlWebpackPlugin({
-      title: 'GRC | Solution page',
-      template: `${htmlPath}/solution.html`,
-      filename: 'solution.html',
-      minify: minifyHtmlOptions,
-      chunks: ['solution']
-    }),
-
-    // contact.html
-    new HtmlWebpackPlugin({
-      title: 'GRC | Contact page',
-      template: `${htmlPath}/contact.html`,
-      filename: 'contact.html',
-      minify: minifyHtmlOptions,
-      chunks: ['contact']
-    }),
-
-    // about.html
-    new HtmlWebpackPlugin({
-      title: 'GRC | About page',
-      template: `${htmlPath}/about.html`,
-      filename: 'about.html',
-      minify: minifyHtmlOptions,
-      chunks: ['about']
-    }),
-
-    // service.html
-    new HtmlWebpackPlugin({
-      title: 'GRC | Terms of service',
-      template: `${htmlPath}/contact.html`,
-      filename: 'service.html',
-      minify: minifyHtmlOptions,
-      chunks: ['service']
-    }),
-
-    // privacy.html
-    new HtmlWebpackPlugin({
-      title: 'GRC | Privacy policy',
-      template: `${htmlPath}/privacy.html`,
-      filename: 'privacy.html',
-      minify: minifyHtmlOptions,
-      chunks: ['privacy']
-    }),
-
     // css-bundle
     new MiniCssExtractPlugin({ filename: '[name].bundle-[hash:8].css' }),
 

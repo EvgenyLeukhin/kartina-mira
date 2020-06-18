@@ -86,46 +86,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    new HtmlWebpackPlugin({
-      title: 'GRC | Solution page',
-      favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/solution.html`,
-      filename: 'solution.html',
-      chunks: ['solution']
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'GRC | About page',
-      favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/about.html`,
-      filename: 'about.html',
-      chunks: ['about']
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'GRC | Contact page',
-      favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/contact.html`,
-      filename: 'contact.html',
-      chunks: ['contact']
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'GRC | Terms of service',
-      favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/service.html`,
-      filename: 'service.html',
-      chunks: ['service']
-    }),
-
-    new HtmlWebpackPlugin({
-      title: 'GRC | Privacy policy',
-      favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/privacy.html`,
-      filename: 'privacy.html',
-      chunks: ['privacy']
-    }),
-
     // add jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
