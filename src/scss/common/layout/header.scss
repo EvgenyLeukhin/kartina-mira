@@ -4,115 +4,8 @@
 }
 
 .header {
-
-  // mobile menu
-  &__mobile-menu {
-    display: none;
-    background-color: rgba(17,17,23, .9);
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    top: 65px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    left: -2000px;
-    min-height: calc(100vh - 65px);
-
-    .mobile-nav {
-      max-width: 295px;
-      margin-top: -150px;
-
-      li {
-        padding: 25px;
-        border-bottom: 1px solid #262626;
-
-        &:last-child { border-bottom: 0; }
-      }
-
-      a {
-        font-family: 'Druk Wide';
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-      }
-    }
-
-    .mobile-links {
-      width: 300px;
-      margin-left: -150px;
-      position: absolute;
-      left: 50%;
-      right: 0;
-      bottom: 44px;
-
-      li {
-        margin-bottom: 10px;
-
-        &:first-child {
-          a { font-weight: normal; }
-        }
-      }
-
-      a {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-      }
-    }
-  }
-
-  &__burger {
-    display: none;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    border: 2px solid #fff;
-
-    &::before, &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      margin-left: -5px;
-      display: block;
-      width: 10px;
-      height: 2px;
-      background-color: #fff;
-      transition: all $transition-default-duration;
-    }
-
-    &::before { top: 6px; }
-    &::after { bottom: 6px; }
-
-    &.open {
-      &::before, &::after {
-        top: 50%;
-        margin-top: -1px;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
-
-      // show menu when burger click
-      & + .header__mobile-menu {
-        display: flex;
-        animation-name: slideFromLeft;
-        animation-duration: $transition-default-duration;
-        animation-delay: 20ms;
-        animation-fill-mode: both;
-      }
-    }
-  }
+  &__mobile-menu { display: none; }
+  &__burger { display: none; }
 
   &__container {
     display: flex;
@@ -222,8 +115,118 @@
       letter-spacing: 8px;
     }
 
-    &__burger { display: block; }
     &__nav    { display: none; }
     &__links  { display: none; }
+
+
+    &__burger {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      border: 2px solid #fff;
+
+      &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -5px;
+        display: block;
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+        transition: all $transition-default-duration;
+      }
+
+      &::before { top: 6px; }
+      &::after { bottom: 6px; }
+
+      &.open {
+        &::before, &::after {
+          top: 50%;
+          margin-top: -1px;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+
+        // show menu when burger click
+        & + .header__mobile-menu {
+          display: flex;
+          animation-name: slideFromLeft;
+          animation-duration: $transition-default-duration;
+          animation-delay: 20ms;
+          animation-fill-mode: both;
+        }
+      }
+    }
+
+
+    // mobile menu
+    &__mobile-menu {
+      display: flex;
+      background-color: rgba(17,17,23, .9);
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+      z-index: 1;
+      top: 65px;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      left: -2000px;
+      min-height: calc(100vh - 65px);
+
+      .mobile-nav {
+        max-width: 295px;
+        margin-top: -150px;
+
+        li {
+          padding: 25px;
+          border-bottom: 1px solid #262626;
+
+          &:last-child { border-bottom: 0; }
+        }
+
+        a {
+          font-family: 'Druk Wide';
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+      }
+
+      .mobile-links {
+        width: 300px;
+        margin-left: -150px;
+        position: absolute;
+        left: 50%;
+        right: 0;
+        bottom: 44px;
+
+        li {
+          margin-bottom: 10px;
+
+          &:first-child {
+            a { font-weight: normal; }
+          }
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
   }
 }

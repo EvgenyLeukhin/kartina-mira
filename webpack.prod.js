@@ -107,7 +107,7 @@ module.exports = {
     // HTML - MPA //
     // index.html
     new HtmlWebpackPlugin({
-      title: 'GRC | Home page',
+      title: 'Картина мира | Главная',
       template: `${htmlPath}/index.html`,
       filename: 'index.html',
       minify: minifyHtmlOptions,
