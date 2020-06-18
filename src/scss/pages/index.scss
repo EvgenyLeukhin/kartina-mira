@@ -1,2 +1,128 @@
 @import "../common";
 
+@keyframes slideDown {
+  0%   { bottom: -30px; }
+  50%  { bottom: -45px;     }
+  100% { bottom: -30px; }
+}
+
+// top-block //
+.top-block {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-image: url(../../img/bg-top.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -142px;
+
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    height: 100vh;
+  }
+
+
+  &__texts {
+    max-width: 470px;
+    left: 15px;
+    bottom: 25%;
+    position: absolute;
+
+    span {
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 40px;
+      line-height: 55px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-top: 18px;
+    }
+  }
+
+
+  &__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 27px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-left: -8px;
+      left: 50%;
+      bottom: -30px;
+      width: 16px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../../img/icons/arrow-down.svg);
+      position: absolute;
+      animation-name: slideDown;
+      animation-iteration-count: infinite;
+      animation-delay: 4s;
+      animation-duration: 2s;
+    }
+  }
+}
+
+
+// promo-block //
+.promo-block {
+  min-height: 100vh;
+}
+
+
+
+
+
+
+@media (max-width: $laptop-breakpoint) {
+  .top-block {
+    margin-top: -132px;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) and (orientation: portrait) {
+  .top-block {
+    background-position: 33% bottom;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .top-block {
+    margin-top: -64px;
+
+    &__texts {
+      span {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      h2 {
+        font-size: 28px;
+        line-height: 130%;
+      }
+    }
+  }
+}

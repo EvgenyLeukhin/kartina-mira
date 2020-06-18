@@ -18,6 +18,14 @@ h2.bold {
   font-family: 'Druk Wide', sans-serif;
 }
 
+.container {
+  outline: 1px solid #ddd;
+  max-width: 1340px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 // links
 a {
   color: #fff;

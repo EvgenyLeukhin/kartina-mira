@@ -4,6 +4,8 @@
 }
 
 .header {
+  position: relative;
+  z-index: 2;
   &__mobile-menu { display: none; }
   &__burger { display: none; }
 
