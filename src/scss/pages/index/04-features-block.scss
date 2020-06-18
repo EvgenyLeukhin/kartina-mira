@@ -1,0 +1,25 @@
+.features-block {
+  .container {}
+
+  h2 {}
+
+  &__cols {
+    .col {
+      h3 {}
+
+      p {}
+
+      &.col-l {}
+      &.col-m {}
+      &.col-r {}
+    }
+  }
+}
+
+@media (max-width: $laptop-breakpoint) {
+  .features-block {}
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .features-block {}
+}

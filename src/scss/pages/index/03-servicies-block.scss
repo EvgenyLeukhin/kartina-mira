@@ -1,0 +1,24 @@
+.servicies-block {
+  .container {}
+
+  h2 {}
+
+  &__list {
+    .market {}
+    .corporate {}
+    .cinema {}
+
+    .cover-link {}
+    .title-link {}
+  }
+
+
+}
+
+@media (max-width: $laptop-breakpoint) {
+  .servicies-block {}
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .servicies-block {}
+}

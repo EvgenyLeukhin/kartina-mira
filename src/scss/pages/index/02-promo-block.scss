@@ -1,0 +1,25 @@
+// promo-block //
+.promo-block {
+  .container {}
+
+  &__cols {
+    .col {}
+
+    .col-l {
+      p {}
+    }
+    .col-r {
+      .slides {}
+
+      a {}
+    }
+  }
+}
+
+@media (max-width: $laptop-breakpoint) {
+  .promo-block {}
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .promo-block {}
+}
