@@ -122,6 +122,46 @@ module.exports = {
       chunks: ['about']
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Игровое кино',
+      template: `${htmlPath}/cinema.html`,
+      filename: 'cinema.html',
+      minify: minifyHtmlOptions,
+      chunks: ['cinema']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Контакты',
+      template: `${htmlPath}/contacts.html`,
+      filename: 'contacts.html',
+      minify: minifyHtmlOptions,
+      chunks: ['contacts']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Корпоративное кино',
+      template: `${htmlPath}/corporate.html`,
+      filename: 'corporate.html',
+      minify: minifyHtmlOptions,
+      chunks: ['corporate']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Реклама',
+      template: `${htmlPath}/market.html`,
+      filename: 'market.html',
+      minify: minifyHtmlOptions,
+      chunks: ['market']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Наши картины',
+      template: `${htmlPath}/movies.html`,
+      filename: 'movies.html',
+      minify: minifyHtmlOptions,
+      chunks: ['movies']
+    }),
+
     // css-bundle
     new MiniCssExtractPlugin({ filename: '[name].bundle-[hash:8].css' }),
 

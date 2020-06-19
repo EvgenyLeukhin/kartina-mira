@@ -89,6 +89,47 @@ module.exports = {
       chunks: ['about']
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Игровое кино',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/cinema.html`,
+      filename: 'cinema.html',
+      chunks: ['cinema']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Контакты',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/contacts.html`,
+      filename: 'contacts.html',
+      chunks: ['contacts']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Корпоративное кино',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/corporate.html`,
+      filename: 'corporate.html',
+      chunks: ['corporate']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Реклама',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/market.html`,
+      filename: 'market.html',
+      chunks: ['market']
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Наши картины',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/movies.html`,
+      filename: 'movies.html',
+      chunks: ['movies']
+    }),
+
+
     // add jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
