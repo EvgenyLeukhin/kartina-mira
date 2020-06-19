@@ -114,6 +114,14 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | О нас',
+      template: `${htmlPath}/about.html`,
+      filename: 'about.html',
+      minify: minifyHtmlOptions,
+      chunks: ['about']
+    }),
+
     // css-bundle
     new MiniCssExtractPlugin({ filename: '[name].bundle-[hash:8].css' }),
 

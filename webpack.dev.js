@@ -81,6 +81,14 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | О нас',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPath}/about.html`,
+      filename: 'about.html',
+      chunks: ['about']
+    }),
+
     // add jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
