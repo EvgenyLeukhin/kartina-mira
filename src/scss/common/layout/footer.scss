@@ -1,4 +1,4 @@
-footer {
+.footer {
   .container {
     margin-top: 50px;
     display: flex;
@@ -14,7 +14,8 @@ footer {
     color: #747474;
   }
 
-  .logp {
+  .logo {
+    text-align: center;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 0.4em;
@@ -46,5 +47,31 @@ footer {
         svg path { fill: $accent-color; }
       }
     }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .footer {
+    .container {
+      margin-top: 0;
+      padding-bottom: 30px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .copyright {
+      order: 3;
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+
+    .logo {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      order: 1;
+    }
+
+    .social { order: 2; }
   }
 }
