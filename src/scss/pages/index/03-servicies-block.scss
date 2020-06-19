@@ -67,7 +67,7 @@
         }
 
         &.title-link {
-          bottom: -60px;
+          top: 105%;
           left: 0;
           display: inline-flex;
           font-family: 'Druk Wide Medium', sans-serif;
@@ -79,7 +79,23 @@
       }
 
       &.market { background-image: url(../../img/market.png); }
-      &.corporate { background-image: url(../../img/corporate.png); }
+      &.corporate {
+        background-image: url(../../img/corporate.png);
+
+        .factoid {
+          position: absolute;
+          bottom: -90px;
+          right: 0;
+          width: 122px;
+          height: 64px;
+          background: linear-gradient(229.63deg, #3632F1 17.57%, rgba(11, 255, 240, 0.76) 101.45%);
+          color: $text-color;
+          text-transform: uppercase;
+          font-size: 10px;
+          line-height: 13px;
+          padding: 9px 8px;
+        }
+      }
       &.cinema { background-image: url(../../img/cinema.png); }
     }
   }
@@ -102,6 +118,11 @@
       li {
         height: 327px;
         margin-bottom: 100px;
+
+
+        &.corporate {
+          .factoid { display: none; }
+        }
 
         &:hover { transform: none; }
 
@@ -129,7 +150,7 @@
           }
 
           &.title-link {
-            bottom: -50px;
+            top: 108%;
             font-size: 16px;
             line-height: 21px;
           }
