@@ -17,15 +17,15 @@ $(document).ready(() => {
 
 
 
-  // top-block height on mobile
-  const topBlock = $('.top-block');
-  let vh = window.innerHeight * 0.01;
-  topBlock.style.setProperty('--vh', `${vh}px`);
+  // // top-block height on mobile
+  // const topBlock = $('.top-block');
+  // let vh = window.innerHeight * 0.01;
+  // topBlock.style.setProperty('--vh', `${vh}px`);
 
-  window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  })
+  // window.addEventListener('resize', () => {
+  //   let vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  // })
 });
 
 // // Initialise imported function as jQuery function

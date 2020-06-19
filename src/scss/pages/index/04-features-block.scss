@@ -1,6 +1,6 @@
 .features-block {
   .container {
-    padding-top: 50px;
+    padding-top: 160px;
     padding-bottom: 50px;
   }
 
@@ -56,6 +56,8 @@
 
 @media (max-width: $mobile-breakpoint) {
   .features-block {
+    .container { padding-top: 20px; }
+
     &__cols {
       flex-direction: column;
       margin-bottom: 35px;

@@ -2,10 +2,11 @@
   .container {
     margin-top: 50px;
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 80px;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #262626;
   }
 
   .copyright {
