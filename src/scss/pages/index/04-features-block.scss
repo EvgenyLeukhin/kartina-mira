@@ -1,10 +1,43 @@
 .features-block {
-  .container {}
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-  h2 {}
+  h2, h3 {
+    font-family: 'Druk Wide Medium', sans-serif;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
   &__cols {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+
     .col {
+      flex-basis: 30%;
+
       h3 {}
 
       p {}

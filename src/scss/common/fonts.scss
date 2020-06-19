@@ -20,13 +20,24 @@
   font-style: normal;
 }
 
-// Druk Wide (700)
+// Druk Wide (700) - old w\o cyrillic
+// @font-face {
+//   font-family: 'Druk Wide';
+//   src: local('Druk Wide'), local('Druk-Wide'), local('Druk_Wide'),
+//     url('../../fonts/DrukWide/700/DrukWideBold.woff2') format('woff2'),
+//     url('../../fonts/DrukWide/700/DrukWideBold.woff') format('woff'),
+//     url('../../fonts/DrukWide/700/DrukWideBold.ttf') format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// Druk Wide (500)
 @font-face {
-  font-family: 'Druk Wide';
-  src: local('Druk Wide'), local('Druk-Wide'), local('Druk_Wide'),
-    url('../../fonts/DrukWide/700/DrukWideBold.woff2') format('woff2'),
-    url('../../fonts/DrukWide/700/DrukWideBold.woff') format('woff'),
-    url('../../fonts/DrukWide/700/DrukWideBold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'Druk Wide Medium';
+  src: local('Druk Wide Medium'), local('Druk-Wide-Medium'), local('Druk_Wide_Medium'),
+    url('../../fonts/Druk-Wide-Medium-Web/500/Druk-Wide-Medium-Web.woff2') format('woff2'),
+    url('../../fonts/Druk-Wide-Medium-Web/500/Druk-Wide-Medium-Web.woff') format('woff'),
+    url('../../fonts/Druk-Wide-Medium-Web/500/Druk-Wide-Medium-Web.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }

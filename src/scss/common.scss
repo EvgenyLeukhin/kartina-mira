@@ -15,7 +15,7 @@ body {
 }
 
 h2.bold {
-  font-family: 'Druk Wide', sans-serif;
+  font-family: 'Druk Wide Medium', sans-serif;
 }
 
 .container {
@@ -29,9 +29,10 @@ h2.bold {
 // links
 a {
   color: $text-color;
+  font-family: 'Manrope';
 
   &:hover {
-    transition-property: color;
+    transition-property: all;
     transition-duration: $transition-default-duration;
   }
 
@@ -43,6 +44,27 @@ a {
   &:active { text-decoration: none; }
 
   &.btn {
-    display: block;
+    display: flex;
+    width: 316px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid #00D1E6;
+    background-color: #111117;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 50px;
+
+    &:hover {
+      background-color: $text-color;
+      color: #000;
+    }
+
+    &:active { background-color: $accent-color; }
   }
 }

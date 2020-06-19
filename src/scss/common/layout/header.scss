@@ -179,27 +179,27 @@
       text-align: center;
       align-items: center;
       position: absolute;
-      z-index: 1;
-      top: 65px;
+      z-index: -1;
+      top: 0;
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
       left: -2000px;
-      min-height: calc(100vh - 65px);
+      min-height: calc(100vh);
 
       .mobile-nav {
         max-width: 295px;
         margin-top: -150px;
 
         li {
-          padding: 25px;
+          padding: 25px 0;
           border-bottom: 1px solid #262626;
 
           &:last-child { border-bottom: 0; }
         }
 
         a {
-          font-family: 'Druk Wide';
+          font-family: 'Druk Wide Medium';
           font-size: 20px;
           line-height: 24px;
           letter-spacing: 0.05em;
