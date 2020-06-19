@@ -11,7 +11,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #111117;
-  color: #fff;
+  color: $text-color;
 }
 
 h2.bold {
@@ -28,18 +28,19 @@ h2.bold {
 
 // links
 a {
-  color: #fff;
+  color: $text-color;
 
   &:hover {
     transition-property: color;
     transition-duration: $transition-default-duration;
   }
 
-  &:hover,
-  &:active {
+  &:hover {
     text-decoration: none;
-    color: #02EDF0;
+    color: $accent-color;
   }
+
+  &:active { text-decoration: none; }
 
   &.btn {
     display: block;

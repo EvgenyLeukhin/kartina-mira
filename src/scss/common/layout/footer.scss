@@ -1,25 +1,50 @@
 footer {
   .container {
-
+    margin-top: 50px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .copyright {
-
+    font-size: 14px;
+    line-height: 16px;
+    color: #747474;
   }
 
   .logp {
-
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
   }
 
   .social {
-    li {
-
-    }
+    flex-basis: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
 
     a {
-      &.vk {}
-      &.fb {}
-      &.in {}
+      display: inline-flex;
+      width: 26px;
+      height: 26px;
+      align-items: center;
+      justify-content: center;
+
+      svg path {
+        transition-property: fill;
+        transition-duration: $transition-default-duration;
+      }
+
+      &:hover {
+        svg path { fill: $accent-color; }
+      }
     }
   }
 }

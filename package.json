@@ -15,7 +15,7 @@
     "start": "webpack-dev-server --config=./webpack.dev.js",
     "build": "webpack --config=./webpack.prod.js",
     "serve": "node server.js",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "delete-build": "rimraf dist",
     "delete-packages": "rimraf node_modules",
     "npm-install": "npm install",
