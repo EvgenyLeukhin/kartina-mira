@@ -20,6 +20,11 @@
     line-height: 27px;
     letter-spacing: 0.4em;
     text-transform: uppercase;
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+    }
   }
 
   .social {

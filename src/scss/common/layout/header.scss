@@ -42,6 +42,11 @@
         line-height: 19px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+
+        &.active {
+          color: $accent-color;
+          pointer-events: none;
+        }
       }
     }
   }
@@ -55,6 +60,11 @@
     margin-left: auto;
     margin-right: 108px;
     margin-top: -3px;
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+    }
   }
 
   &__links {
@@ -119,7 +129,6 @@
 
     &__nav    { display: none; }
     &__links  { display: none; }
-
 
     &__burger {
       display: block;
@@ -204,6 +213,12 @@
           line-height: 24px;
           letter-spacing: 0.05em;
           text-transform: uppercase;
+
+          &.active {
+            cursor: default;
+            color: $accent-color;
+            pointer-events: none;
+          }
         }
       }
 

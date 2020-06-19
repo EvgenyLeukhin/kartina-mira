@@ -29,6 +29,9 @@
       background-position: center;
       margin-bottom: 150px;
       border-radius: 8px;
+      transition-duration: $transition-default-duration;
+
+      &:hover { transform: scale(1.05); }
 
       a {
         position: absolute;
@@ -84,10 +87,6 @@
 
 }
 
-@media (max-width: $laptop-breakpoint) {
-  .servicies-block {}
-}
-
 @media (max-width: $mobile-breakpoint) {
   .servicies-block {
     h2 {
@@ -103,6 +102,8 @@
       li {
         height: 327px;
         margin-bottom: 100px;
+
+        &:hover { transform: none; }
 
         a {
           &.cover-link { display: none; }

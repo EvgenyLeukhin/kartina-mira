@@ -24,16 +24,20 @@ h2.bold {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  &.template {
+    min-height: 500px;
+  }
 }
 
 // links
 a {
   color: $text-color;
   font-family: 'Manrope';
+  transition-duration: $transition-default-duration;
 
   &:hover {
     transition-property: all;
-    transition-duration: $transition-default-duration;
   }
 
   &:hover {

@@ -29,7 +29,13 @@ module.exports = {
 
   // input-output
   entry: {
-    index:    `${jsPath}/index.js`,
+    about:     `${jsPath}/about.js`,
+    cinema:    `${jsPath}/cinema.js`,
+    contacts:  `${jsPath}/contacts.js`,
+    corporate: `${jsPath}/corporate.js`,
+    index:     `${jsPath}/index.js`,
+    market:    `${jsPath}/market.js`,
+    movies:    `${jsPath}/movies.js`,
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
