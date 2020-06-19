@@ -1,15 +1,84 @@
 .servicies-block {
-  .container {}
+  .container {
+    padding-top: 50px;
+    padding-bottom: 5px;
+  }
 
-  h2 {}
+  h2 {
+    font-family: 'Druk Wide Medium', sans-serif;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 85px;
+  }
 
   &__list {
-    .market {}
-    .corporate {}
-    .cinema {}
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 85px;
+    padding-right: 45px;
 
-    .cover-link {}
-    .title-link {}
+    li {
+      height: 550px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 150px;
+      border-radius: 8px;
+
+      a {
+        position: absolute;
+
+        &.cover-link {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        &.btn-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 252px;
+          height: 50px;
+          position: absolute;
+          bottom: 60px;
+          left: 50%;
+          margin-left: -126px;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #000;
+          background-color: #fff;
+
+          &:hover {
+            background-color: $accent-color;
+          }
+        }
+
+        &.title-link {
+          bottom: -60px;
+          left: 0;
+          display: inline-flex;
+          font-family: 'Druk Wide Medium', sans-serif;
+          font-size: 24px;
+          line-height: 31px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+      }
+
+      &.market { background-image: url(../../img/market.png); }
+      &.corporate { background-image: url(../../img/corporate.png); }
+      &.cinema { background-image: url(../../img/cinema.png); }
+    }
   }
 
 

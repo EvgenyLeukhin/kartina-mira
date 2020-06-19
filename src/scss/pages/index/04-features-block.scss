@@ -35,12 +35,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 
     .col {
       flex-basis: 30%;
-      margin-bottom: 50px;
       margin-right: 15px;
-      flex-grow: 1;
 
       &:last-child { margin-right: 0; }
     }
@@ -48,18 +47,20 @@
 }
 
 @media (max-width: $laptop-breakpoint) {
-  .features-block {}
+  .features-block {
+    &__cols {
+      .col { flex-grow: 1; }
+    }
+  }
 }
 
 @media (max-width: $mobile-breakpoint) {
   .features-block {
     &__cols {
       flex-direction: column;
+      margin-bottom: 35px;
 
-      .col {
-        margin-right: 0;
-        margin-bottom: 35px;
-      }
+      .col { margin-right: 0; }
     }
     h2 {
       font-size: 20px;
