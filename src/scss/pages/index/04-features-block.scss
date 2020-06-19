@@ -34,17 +34,15 @@
     padding-left: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .col {
       flex-basis: 30%;
+      margin-bottom: 50px;
+      margin-right: 15px;
+      flex-grow: 1;
 
-      h3 {}
-
-      p {}
-
-      &.col-l {}
-      &.col-m {}
-      &.col-r {}
+      &:last-child { margin-right: 0; }
     }
   }
 }
@@ -54,5 +52,25 @@
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .features-block {}
+  .features-block {
+    &__cols {
+      flex-direction: column;
+
+      .col {
+        margin-right: 0;
+        margin-bottom: 35px;
+      }
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 15px;
+    }
+  }
 }

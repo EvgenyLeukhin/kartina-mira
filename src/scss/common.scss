@@ -58,7 +58,6 @@ a {
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.05em;
-    margin-top: 50px;
 
     &:hover {
       background-color: $text-color;
@@ -66,5 +65,13 @@ a {
     }
 
     &:active { background-color: $accent-color; }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  a {
+    &.btn {
+      width: 100%;
+    }
   }
 }
