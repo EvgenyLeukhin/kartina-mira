@@ -128,7 +128,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Наши картины',
+      title: 'Картина мира | Наши услуги',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/movies.html`,
       filename: 'movies.html',
