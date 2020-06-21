@@ -43,6 +43,11 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
 
+        &:hover {
+          color: $text-color;
+          text-shadow: 1px 1px 10px $accent-color;
+        }
+
         &.active {
           color: $accent-color;
           pointer-events: none;
@@ -218,6 +223,11 @@
             cursor: default;
             color: $accent-color;
             pointer-events: none;
+          }
+
+          &:hover {
+            color: $text-color;
+            text-shadow: 1px 1px 10px $accent-color;
           }
         }
       }
