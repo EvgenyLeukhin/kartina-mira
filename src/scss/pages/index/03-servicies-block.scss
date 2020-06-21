@@ -24,14 +24,23 @@
     li {
       height: 550px;
       position: relative;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       margin-bottom: 150px;
       border-radius: 8px;
-      transition-duration: $transition-default-duration;
 
-      &:hover { transform: scale(1.05); }
+      .factoid {
+        position: absolute;
+        bottom: -90px;
+        right: 0;
+        width: 122px;
+        height: 64px;
+        background: linear-gradient(229.63deg, #3632F1 17.57%, rgba(11, 255, 240, 0.76) 101.45%);
+        color: $text-color;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 13px;
+        padding: 9px 8px;
+        transform: none;
+      }
 
       a {
         position: absolute;
@@ -43,6 +52,16 @@
           left: 0;
           right: 0;
           bottom: 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          transition-duration: $transition-default-duration;
+
+          &.market { background-image: url(../../img/market.png); }
+          &.corporate { background-image: url(../../img/corporate.png); }
+          &.cinema { background-image: url(../../img/cinema.png); }
+
+          &:hover { transform: scale(1.05); }
         }
 
         &.btn-link {
@@ -77,26 +96,6 @@
           text-transform: uppercase;
         }
       }
-
-      &.market { background-image: url(../../img/market.png); }
-      &.corporate {
-        background-image: url(../../img/corporate.png);
-
-        .factoid {
-          position: absolute;
-          bottom: -90px;
-          right: 0;
-          width: 122px;
-          height: 64px;
-          background: linear-gradient(229.63deg, #3632F1 17.57%, rgba(11, 255, 240, 0.76) 101.45%);
-          color: $text-color;
-          text-transform: uppercase;
-          font-size: 10px;
-          line-height: 13px;
-          padding: 9px 8px;
-        }
-      }
-      &.cinema { background-image: url(../../img/cinema.png); }
     }
   }
 
@@ -120,15 +119,14 @@
         height: 327px;
         margin-bottom: 100px;
 
-
-        &.corporate {
-          .factoid { display: none; }
-        }
-
-        &:hover { transform: none; }
+        .factoid { display: none; }
 
         a {
-          &.cover-link { display: none; }
+          &.cover-link {
+            pointer-events: none;
+
+            &:hover { transform: none; }
+          }
 
           &.btn-link {
             right: 5px;
