@@ -15,5 +15,5 @@ src/_design
 .cache/
 .idea
 
-# _design/
+_design/
 
