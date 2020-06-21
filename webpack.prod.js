@@ -35,7 +35,7 @@ module.exports = {
     corporate: `${jsPath}/corporate.js`,
     index:     `${jsPath}/index.js`,
     market:    `${jsPath}/market.js`,
-    movies:    `${jsPath}/movies.js`,
+    servicies: `${jsPath}/servicies.js`,
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -162,10 +162,10 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Наши услуги',
-      template: `${htmlPath}/movies.html`,
-      filename: 'movies.html',
+      template: `${htmlPath}/servicies.html`,
+      filename: 'servicies.html',
       minify: minifyHtmlOptions,
-      chunks: ['movies']
+      chunks: ['servicies']
     }),
 
     // css-bundle

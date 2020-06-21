@@ -1,1 +1,19 @@
 @import "../common";
+@import "../pages/index/05-contacts-block";
+
+.contacts-page {
+  main {
+    padding-top: 100px;
+    min-height: calc(100vh - 330px);
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .contacts-page {
+    main {
+      padding-top: 0;
+      min-height: calc(100vh - 240px);
+    }
+  }
+}
+

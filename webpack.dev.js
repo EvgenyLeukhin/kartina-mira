@@ -28,7 +28,7 @@ module.exports = {
     corporate: `${jsPath}/corporate.js`,
     index:     `${jsPath}/index.js`,
     market:    `${jsPath}/market.js`,
-    movies:    `${jsPath}/movies.js`,
+    servicies: `${jsPath}/servicies.js`,
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -130,9 +130,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Картина мира | Наши услуги',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/movies.html`,
-      filename: 'movies.html',
-      chunks: ['movies']
+      template: `${htmlPath}/servicies.html`,
+      filename: 'servicies.html',
+      chunks: ['servicies']
     }),
 
 
