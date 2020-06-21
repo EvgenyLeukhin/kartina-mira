@@ -2,8 +2,9 @@
 @import "../pages/index/05-contacts-block";
 
 .contacts-page {
+  .container { margin-top: 0; }
+
   main {
-    padding-top: 100px;
     min-height: calc(100vh - 330px);
   }
 }

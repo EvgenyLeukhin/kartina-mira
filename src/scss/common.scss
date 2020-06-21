@@ -72,6 +72,51 @@ a {
   }
 }
 
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  li {
+    &:last-child {
+      a::after { display: none; }
+    }
+
+    a {
+      position: relative;
+      font-size: 14px;
+      line-height: 19px;
+      color: #9A9A9A;
+      margin-right: 25px;
+
+      &:hover { text-decoration: underline; }
+
+      &::after {
+        content: ">";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        font-size: 24px;
+        line-height: 18px;
+        position: absolute;
+        right: -22px;
+        top: 50%;
+        margin-top: -9px;
+      }
+
+      &.active {
+        cursor: default;
+        pointer-events: none;
+        color: $accent-color;
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile-breakpoint) {
   a {
     &.btn {

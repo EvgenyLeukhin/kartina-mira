@@ -8,7 +8,7 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
-<body>
+<body class="servicies-page">
   <header class="header">
     <div class="header__container">
       <ul class="header__nav">
@@ -46,6 +46,11 @@
   <main>
     <section class="servicies-block">
       <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li><a class="active" href="#">Наши услуги</a></li>
+        </ul>
+
         <h2 class="bold">Наши услуги</h2>
 
         <ul class="servicies-block__list">
