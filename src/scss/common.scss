@@ -75,6 +75,7 @@ a {
 .breadcrumbs {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-top: 25px;
   margin-bottom: 25px;
