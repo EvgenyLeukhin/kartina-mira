@@ -10,7 +10,7 @@
   height: calc(var(--vh, 1vh) * 100); // top-block height on mobile
   position: relative;
   z-index: 1;
-  background-image: url(../../img/bg-top.png);
+  background-image: url(../img/bg-top.png);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,7 +75,7 @@
       height: 10px;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url(../../img/icons/arrow-down.svg);
+      background-image: url(../img/icons/arrow-down.svg);
       position: absolute;
       animation-name: slideDown;
       animation-iteration-count: infinite;

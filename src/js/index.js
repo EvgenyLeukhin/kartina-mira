@@ -1,5 +1,5 @@
 import './common.js';
-import '../scss/pages/index.scss';
+import '../scss/index.scss';
 
 $(document).ready(() => {
   // click to more btn

@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
-const jsPath = './src/js';
 const htmlPath = `${__dirname}/src/html`;
 const favIconPath = './src/img/icons';
 
@@ -21,15 +20,7 @@ module.exports = {
   watchOptions: { ignored: /node_modules/ },
 
   // input-output
-  entry: {
-    about:     `${jsPath}/about.js`,
-    cinema:    `${jsPath}/cinema.js`,
-    contacts:  `${jsPath}/contacts.js`,
-    corporate: `${jsPath}/corporate.js`,
-    index:     `${jsPath}/index.js`,
-    market:    `${jsPath}/market.js`,
-    servicies: `${jsPath}/servicies.js`,
-  },
+  entry: { index: './src/js/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
@@ -84,7 +75,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/index.html`,
       filename: 'index.html',
-      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
@@ -92,7 +82,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/about.html`,
       filename: 'about.html',
-      chunks: ['about']
     }),
 
     new HtmlWebpackPlugin({
@@ -100,7 +89,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/cinema.html`,
       filename: 'cinema.html',
-      chunks: ['cinema']
     }),
 
     new HtmlWebpackPlugin({
@@ -108,7 +96,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/contacts.html`,
       filename: 'contacts.html',
-      chunks: ['contacts']
     }),
 
     new HtmlWebpackPlugin({
@@ -116,7 +103,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/corporate.html`,
       filename: 'corporate.html',
-      chunks: ['corporate']
     }),
 
     new HtmlWebpackPlugin({
@@ -124,7 +110,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/market.html`,
       filename: 'market.html',
-      chunks: ['market']
     }),
 
     new HtmlWebpackPlugin({
@@ -132,7 +117,6 @@ module.exports = {
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPath}/servicies.html`,
       filename: 'servicies.html',
-      chunks: ['servicies']
     }),
 
 

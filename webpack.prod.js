@@ -20,7 +20,6 @@ const minifyHtmlOptions = {
   removeRedundantAttributes: true
 };
 
-const jsPath = './src/js';
 const htmlPath = `${__dirname}/src/html`;
 const favIconPath = './src/img/icons';
 
@@ -28,15 +27,7 @@ module.exports = {
   mode: 'production',
 
   // input-output
-  entry: {
-    about:     `${jsPath}/about.js`,
-    cinema:    `${jsPath}/cinema.js`,
-    contacts:  `${jsPath}/contacts.js`,
-    corporate: `${jsPath}/corporate.js`,
-    index:     `${jsPath}/index.js`,
-    market:    `${jsPath}/market.js`,
-    servicies: `${jsPath}/servicies.js`,
-  },
+  entry: { index: './src/js/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle-[hash:8].js',
@@ -117,7 +108,6 @@ module.exports = {
       template: `${htmlPath}/index.html`,
       filename: 'index.html',
       minify: minifyHtmlOptions,
-      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
@@ -125,7 +115,6 @@ module.exports = {
       template: `${htmlPath}/about.html`,
       filename: 'about.html',
       minify: minifyHtmlOptions,
-      chunks: ['about']
     }),
 
     new HtmlWebpackPlugin({
@@ -133,7 +122,6 @@ module.exports = {
       template: `${htmlPath}/cinema.html`,
       filename: 'cinema.html',
       minify: minifyHtmlOptions,
-      chunks: ['cinema']
     }),
 
     new HtmlWebpackPlugin({
@@ -141,7 +129,6 @@ module.exports = {
       template: `${htmlPath}/contacts.html`,
       filename: 'contacts.html',
       minify: minifyHtmlOptions,
-      chunks: ['contacts']
     }),
 
     new HtmlWebpackPlugin({
@@ -149,7 +136,6 @@ module.exports = {
       template: `${htmlPath}/corporate.html`,
       filename: 'corporate.html',
       minify: minifyHtmlOptions,
-      chunks: ['corporate']
     }),
 
     new HtmlWebpackPlugin({
@@ -157,7 +143,6 @@ module.exports = {
       template: `${htmlPath}/market.html`,
       filename: 'market.html',
       minify: minifyHtmlOptions,
-      chunks: ['market']
     }),
 
     new HtmlWebpackPlugin({
@@ -165,7 +150,6 @@ module.exports = {
       template: `${htmlPath}/servicies.html`,
       filename: 'servicies.html',
       minify: minifyHtmlOptions,
-      chunks: ['servicies']
     }),
 
     // css-bundle

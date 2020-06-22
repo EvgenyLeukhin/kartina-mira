@@ -1,0 +1,30 @@
+@import "common";
+
+// index-page
+@import "index-page/01-top-block";
+@import "index-page/02-promo-block";
+@import "index-page/03-servicies-block";
+@import "index-page/04-features-block";
+
+// contacts-page
+.contacts-page {
+  .container { margin-top: 0; }
+
+  main {
+    min-height: calc(100vh - 330px);
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .contacts-page {
+    main {
+      padding-top: 0;
+      min-height: calc(100vh - 240px);
+    }
+  }
+}
+
+// servicies-page
+.servicies-page .servicies-block .container {
+  padding-top: 0;
+}

@@ -57,9 +57,9 @@
           background-position: center;
           transition-duration: $transition-default-duration;
 
-          &.market { background-image: url(../../img/market.png); }
-          &.corporate { background-image: url(../../img/corporate.png); }
-          &.cinema { background-image: url(../../img/cinema.png); }
+          &.market { background-image: url(../img/market.png); }
+          &.corporate { background-image: url(../img/corporate.png); }
+          &.cinema { background-image: url(../img/cinema.png); }
 
           &:hover { transform: scale(1.05); }
         }
@@ -138,7 +138,7 @@
             height: 60px;
             background-color: rgba(0,0,0, 0.55);
             background-repeat: no-repeat;
-            background-image: url(../../img/icons/arrow-right.svg);
+            background-image: url(../img/icons/arrow-right.svg);
             background-position: center;
             border-radius: 50%;
 

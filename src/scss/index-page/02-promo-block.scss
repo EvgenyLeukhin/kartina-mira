@@ -2,7 +2,7 @@
 .promo-block {
     min-height: 806px;
     background-repeat: no-repeat;
-    background-image: url(../../img/bg-promo.png);
+    background-image: url(../img/bg-promo.png);
     background-position: center 30px;
 
   .container {
@@ -53,7 +53,7 @@
         margin-bottom: 20px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url(../../img/gallery.png);
+        background-image: url(../img/gallery.png);
 
         a {
           position: absolute;
@@ -123,7 +123,7 @@
           border: 1px solid rgba(255, 255, 255, 0.21);
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url(../../img/icons/arrow-up-right.svg);
+          background-image: url(../img/icons/arrow-up-right.svg);
         }
       }
     }
@@ -137,7 +137,7 @@
 
 @media (max-width: $mobile-breakpoint) {
   .promo-block {
-    background-image: url(../../img/bg-promo-mobile.png);
+    background-image: url(../img/bg-promo-mobile.png);
     background-size: 100% auto;
     background-position: center top;
 
