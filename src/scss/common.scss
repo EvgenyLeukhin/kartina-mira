@@ -6,6 +6,7 @@
 @import "common/layout/header";
 @import "common/layout/footer";
 @import "common/contacts-block";
+@import "common/servicies-page";
 
 // @import "../../../node_modules/izimodal/css/iziModal.css";
 
@@ -15,8 +16,9 @@ body {
   color: $text-color;
 }
 
-h2.bold {
+.bold {
   font-family: 'Druk Wide Medium', sans-serif;
+  text-transform: uppercase;
 }
 
 .container {

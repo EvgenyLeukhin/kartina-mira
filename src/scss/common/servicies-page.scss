@@ -1,0 +1,116 @@
+.servicies-page {
+  h2.bold {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+
+    & + p {
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 72px;
+    }
+  }
+
+  .servicies-list {
+    .container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 75px;
+
+      .poster-container {
+        position: relative;
+        margin-bottom: 30px;
+
+        .poster {
+          width: 100%;
+          height: auto;
+        }
+
+        a {
+          position: absolute;
+          display: block;
+          left: 50%;
+          top: 50%;
+          width: 122px;
+          height: 112px;
+          margin-left: -56px;
+          margin-top: -56px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .servicies-page {
+    h2.bold {
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.05em;
+
+      & + p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+    .servicies-list {
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      li {
+        margin-bottom: 40px;
+
+        .poster-container {
+          a {
+            width: 86px;
+            height: 86px;
+            margin-top: -43px;
+            margin-left: -43px;
+          }
+        }
+
+        h3 {
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
