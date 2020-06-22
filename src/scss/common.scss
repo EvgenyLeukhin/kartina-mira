@@ -1,3 +1,4 @@
+// common
 @import "common/fonts";
 @import "common/vars";
 @import "common/bootstrap-reboot";
@@ -8,7 +9,8 @@
 @import "common/contacts-block";
 @import "common/servicies-page";
 
-// @import "../../../node_modules/izimodal/css/iziModal.css";
+// izimodal
+@import "~izimodal/css/iziModal.css";
 
 body {
   font-family: 'Manrope', sans-serif;
