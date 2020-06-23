@@ -24,7 +24,7 @@ $(document).ready(() => {
     const openModalLinkData = $(this).data();
 
     // modal element
-    const modal = $('#modal-youtube');
+    const modal = $('#modal-vimeo');
 
     // to reset initial iframeURL !!!
     modal.iziModal('destroy');
