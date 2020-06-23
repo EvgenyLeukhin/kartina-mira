@@ -22,7 +22,7 @@
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-bottom: 55px;
 
     li {
       display: flex;
@@ -33,7 +33,8 @@
         flex-basis: 50%;
         flex-shrink: 0;
 
-        &.left { margin-right: 15px; }
+        &.left { padding-right: 50px; }
+        &.right { padding-left: 50px; }
       }
 
       img {
@@ -102,18 +103,23 @@
         margin-bottom: 0;
       }
     }
+
     &__list {
       max-width: none;
       padding-left: 25px;
       padding-right: 25px;
+      margin-bottom: 70px;
 
       li {
         flex-direction: column;
         align-items: initial;
         margin-bottom: 25px;
 
+        img { max-width: 420px; }
+
         & > div {
-          &.left { margin-right: 0; }
+          &.left { padding-right: 0; }
+          &.right { padding-left: 0; }
         }
 
         h3 {

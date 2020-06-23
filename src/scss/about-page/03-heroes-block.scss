@@ -1,0 +1,58 @@
+.heroes-block {
+  margin-bottom: 100px;
+
+  .bold {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  &__brands {
+    background-color: #17171E;
+    padding: 60px 100px;
+    border-radius: 10px;
+    min-height: 322px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 50px;
+      margin-bottom: 15px;
+      justify-content: center;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .heroes-block {
+    margin-bottom: 72px;
+
+    .bold {
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    &__brands {
+      padding: 40px 35px;
+
+      li {
+        margin-bottom: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        img { max-width: 100px; }
+      }
+    }
+  }
+}
