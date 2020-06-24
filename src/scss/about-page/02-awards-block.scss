@@ -115,15 +115,19 @@
         align-items: initial;
         margin-bottom: 25px;
 
-        img { max-width: 420px; }
+        img {
+          max-width: 420px;
+        }
 
         & > div {
+          flex-basis: 100%;
+
           &.left { padding-right: 0; }
           &.right { padding-left: 0; }
         }
 
         h3 {
-          margin-top: -25px;
+          margin-top: 0;
           font-size: 36px;
           line-height: 54px;
         }
