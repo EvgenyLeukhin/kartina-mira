@@ -1,14 +1,16 @@
-// import izimodal
 import iziModal from 'izimodal/js/iziModal';
-import lozad from 'lozad';
-
-const observer = lozad('.lozad', {
-  rootMargin: '10px 0px', // syntax similar to that of CSS Margin
-  threshold: 0.1 // ratio of element convergence
-});
-observer.observe();
-
 $.fn.iziModal = iziModal;
+
+
+import lozad from 'lozad';
+// images lazy-loading + show preloader
+const observer = lozad('.lozad', {
+  rootMargin: '10px 0px',
+  threshold: 0.1,
+});
+
+// initialize lozad
+observer.observe();
 
 
 $(document).ready(() => {
