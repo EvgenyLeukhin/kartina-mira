@@ -32,14 +32,25 @@
         position: relative;
         margin-bottom: 30px;
 
+        .image-preloader {
+          position: relative;
+          height: 400px;
+          background-color: #17171e;
+          border-radius: 8px;
+        }
+
         .poster {
+          display: none;
           width: 100%;
           height: auto;
+          border-radius: 8px;
+
+          &.show { display: inline; }
         }
 
         a {
+          display: none;
           position: absolute;
-          display: block;
           left: 50%;
           top: 50%;
           width: 112px;
@@ -52,9 +63,9 @@
           background-position: 52% center;
           background-image: url(../img/icons/play.svg);
 
-          &:hover {
-            transform: scale(1.2);
-          }
+          &.show { display: block; }
+
+          &:hover { transform: scale(1.2); }
         }
       }
 
@@ -97,6 +108,8 @@
         margin-bottom: 40px;
 
         .poster-container {
+          .image-preloader { height: 200px; }
+
           a {
             width: 86px;
             height: 86px;

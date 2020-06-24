@@ -33,6 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "imagesloaded": "^4.1.4",
     "izimodal": "^1.5.1",
     "jquery": "^3.4.1"
   },

@@ -1,9 +1,22 @@
 // import izimodal
 import iziModal from 'izimodal/js/iziModal';
+import imagesLoaded from 'imagesloaded';
+
 $.fn.iziModal = iziModal;
+imagesLoaded.makeJQueryPlugin($); // provide jQuery argument
 
 
 $(document).ready(() => {
+
+
+  $('.servicies-list').imagesLoaded(function () {
+    // hide preloader
+    $('.image-preloader').hide();
+
+    // show images and play-btn
+    $('.poster').addClass('show');
+    $('.open-modal-click').addClass('show');
+  });
 
   // toggle header menu
   const burgerIcon = $('.js-burger');

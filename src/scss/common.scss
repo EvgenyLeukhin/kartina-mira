@@ -8,6 +8,7 @@
 @import "common/layout/footer";
 @import "common/contacts-block";
 @import "common/servicies-page";
+@import "common/loader";
 
 // izimodal
 @import "~izimodal/css/iziModal.css";
@@ -29,10 +30,6 @@ body {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  &.template {
-    min-height: 500px;
-  }
 }
 
 // links
