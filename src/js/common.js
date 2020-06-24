@@ -1,23 +1,17 @@
 // import izimodal
 import iziModal from 'izimodal/js/iziModal';
-import imagesLoaded from 'imagesloaded';
+import lozad from 'lozad';
+
+const observer = lozad('.lozad', {
+  rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+  threshold: 0.1 // ratio of element convergence
+});
+observer.observe();
 
 $.fn.iziModal = iziModal;
-imagesLoaded.makeJQueryPlugin($); // provide jQuery argument
 
 
 $(document).ready(() => {
-
-
-  $('.servicies-list').imagesLoaded(function () {
-    // hide preloader
-    $('.image-preloader').hide();
-
-    // show images and play-btn
-    $('.poster').addClass('show');
-    $('.open-modal-click').addClass('show');
-  });
-
   // toggle header menu
   const burgerIcon = $('.js-burger');
 
