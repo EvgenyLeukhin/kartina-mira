@@ -211,7 +211,7 @@ module.exports = {
     // add jQuery
     new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }),
 
-    // IMAGES, FONTS, robot.txt
+    // IMAGES, FONTS, robots.txt
     new CopyWebpackPlugin([
       { from: 'src/img',   to: 'img' },
       { from: 'robots.txt', to: '' },
