@@ -41,16 +41,16 @@ const metaInfo = {
   },
 
   // og tags
-  ogUrl:         { property: 'og:url',          content: HOST_URL },
-  ogType:        { property: 'og:type',         content: 'website' },
-  ogTitle:       { property: 'og:title',        content: TITLE },
-  ogImage:       { property: 'og:image',        content: `${HOST_URL}/cover.png` },
-  ogImageType:   { property: 'og:image:type',   content: 'image/png' },
-  ogImageHeight: { property: 'og:image:height', content: '1024' },
-  ogImageWidth:  { property: 'og:image:width',  content: '512' },
-  ogSiteName:    { property: 'og:site_name',    content: TITLE },
-  ogLocate:      { property: 'og:locate',       content: 'ru_RU' },
-  ogDescription: { property: '10og:description',  content: DESCRIPTION },
+  ogUrl:         { property: 'og:url',           content: HOST_URL },
+  ogType:        { property: 'og:type',          content: 'website' },
+  ogTitle:       { property: 'og:title',         content: TITLE },
+  ogImage:       { property: 'og:image',         content: `${HOST_URL}/cover.png` },
+  ogImageType:   { property: 'og:image:type',    content: 'image/png' },
+  ogImageHeight: { property: 'og:image:height',  content: '1024' },
+  ogImageWidth:  { property: 'og:image:width',   content: '512' },
+  ogSiteName:    { property: 'og:site_name',     content: TITLE },
+  ogLocate:      { property: 'og:locate',        content: 'ru_RU' },
+  ogDescription: { property: '10og:description', content: DESCRIPTION },
 
   // google
   itempropName:        { itemprop: 'name',        content: TITLE },
