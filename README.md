@@ -1,18 +1,19 @@
-# webpack-sass-html
+# kartina-mira
+
+## Github-hosting
+
+[https://evgenyleukhin.github.io/kartina-mira](https://evgenyleukhin.github.io/kartina-mira)
 
 Starter for MPA by webpack with jquery and sass.
 
-## Google recaptcha
+## Start development
 
-### Localhost
+```npm start```
 
-eugeny.leukhin@stellarsolvers.com
-sitekey: 6LdQiscUAAAAAOJucWIvRM-Z6MKGyoS2XW78T7mh
+## Build for production
 
-### https://evgenyleukhin.github.io/webpack-html-sass/
+```npm run build```
 
-eugeny.leukhin@stellarsolvers.com
-sitekey: 6LffjccUAAAAAGU7F9nJCealLAGMZ1H68RKwCj-0
+## Deploy to github-pages (build & deploy)
 
-// compress images
-// cyrillic font
+```npm run deploy```
