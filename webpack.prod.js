@@ -10,6 +10,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
+
 const minifyHtmlOptions = {
   removeComments: true,
   collapseWhitespace: true,
@@ -19,6 +20,52 @@ const minifyHtmlOptions = {
   removeStyleLinkTypeAttributes: true,
   removeRedundantAttributes: true
 };
+
+const HOST_URL = 'https://evgenyleukhin.github.io/kartina-mira';
+const TITLE = 'Картина мира';
+const DESCRIPTION = 'Кинокомпания разрабатывает сценарные концепции и обеспечивает полный комплекс услуг в области аудиовизуального производства – от подготовки к съёмкам до post-production любой сложности, включая 3D-анимацию и озвучивание';
+
+const metaInfo = {
+  // mobile
+  mobileWebAppCapable:      { name: 'mobile-web-app-capable',               content: 'yes' },
+  appleMobileWebAppCapable: { name: 'apple-mobile-web-app-capable',         content: 'yes' },
+  appleMobileBarstyle:      { name: 'apple-mobile-web-app-status-barstyle', content: 'black-translucent' },
+
+  // basic
+  description:   { name: 'description',    content: DESCRIPTION },
+  image:         { name: 'image',          content: `${HOST_URL}/bg-top.png`, },
+  url:           { name: 'url',            content: HOST_URL },
+  identifierURL: { name: 'identifier-URL', content: HOST_URL },
+  keywords: {
+    name: 'keywords',
+    content: 'картина мира, кинокомпания, кинопроизводство, видео на заказ',
+  },
+
+  // og tags
+  ogUrl:         { property: 'og:url',          content: HOST_URL },
+  ogType:        { property: 'og:type',         content: 'website' },
+  ogTitle:       { property: 'og:title',        content: TITLE },
+  ogImage:       { property: 'og:image',        content: `${HOST_URL}/bg-top.png` },
+  ogImageType:   { property: 'og:image:type',   content: 'image/png' },
+  ogImageHeight: { property: 'og:image:height', content: '1024' },
+  ogImageWidth:  { property: 'og:image:width',  content: '512' },
+  ogSiteName:    { property: 'og:site_name',    content: TITLE },
+  ogLocate:      { property: 'og:locate',       content: 'ru_RU' },
+  ogDescription: { property: 'og:description',  content: DESCRIPTION },
+
+  // google
+  itempropName:        { itemprop: 'name',        content: TITLE },
+  itempropDescription: { itemprop: 'description', content: DESCRIPTION },
+  itempropImage:       { itemprop: 'image',       content: `${HOST_URL}/bg-top.png` },
+
+  // twitter
+  twitterTitle:       { name: 'twitter:title',       content: TITLE },
+  twitterDescription: { name: 'twitter:description', content: DESCRIPTION },
+  twitterUrl:         { name: 'twitter:url',         content: HOST_URL },
+  twitterSite:        { name: 'twitter:site',        content: HOST_URL },
+  twitterCard:        { name: 'twitter:card',        content: 'summary_large_image' },
+  twitterImageSrc:    { name: 'twitter:image:src',   content: `${HOST_URL}/bg-top.png` },
+}
 
 const htmlPath = `${__dirname}/src/html`;
 const favIconPath = './src/img/icons';
@@ -108,6 +155,7 @@ module.exports = {
       template: `${htmlPath}/index.html`,
       filename: 'index.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -115,6 +163,7 @@ module.exports = {
       template: `${htmlPath}/about.html`,
       filename: 'about.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -122,6 +171,7 @@ module.exports = {
       template: `${htmlPath}/cinema.html`,
       filename: 'cinema.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -129,6 +179,7 @@ module.exports = {
       template: `${htmlPath}/contacts.html`,
       filename: 'contacts.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -136,6 +187,7 @@ module.exports = {
       template: `${htmlPath}/corporate.html`,
       filename: 'corporate.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -143,6 +195,7 @@ module.exports = {
       template: `${htmlPath}/market.html`,
       filename: 'market.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     new HtmlWebpackPlugin({
@@ -150,6 +203,7 @@ module.exports = {
       template: `${htmlPath}/servicies.html`,
       filename: 'servicies.html',
       minify: minifyHtmlOptions,
+      meta: metaInfo,
     }),
 
     // css-bundle
@@ -162,6 +216,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'src/img',   to: 'img' },
       { from: 'robots.txt', to: '' },
+      { from: 'src/img/bg-top.png', to: '' },
+      { from: 'src/img/kartina_mira.jpg', to: '' },
     ]),
 
     // add favicons
