@@ -83,6 +83,18 @@
   }
 }
 
+@media (max-width: $laptop-breakpoint) {
+  .servicies-page {
+    .servicies-list {
+      li {
+        .poster-container {
+          .poster { height: 350px; }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: $mobile-breakpoint) {
   .servicies-page {
     h2.bold {
@@ -106,7 +118,7 @@
         margin-bottom: 55px;
 
         .poster-container {
-          .poster { height: 250px; }
+          .poster { height: 200px; }
 
           a {
             width: 86px;
