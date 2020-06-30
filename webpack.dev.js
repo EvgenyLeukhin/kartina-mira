@@ -123,49 +123,49 @@ module.exports = {
 
     ///////////////////////// ENG //////////////////////////
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Главная',
+      title: 'Kartina Mira | Home',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/index-eng.html`,
       filename: 'index-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | О нас',
+      title: 'Kartina Mira | About',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/about-eng.html`,
       filename: 'about-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Игровое кино',
+      title: 'Kartina Mira | Live-action films',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/cinema-eng.html`,
       filename: 'cinema-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Контакты',
+      title: 'Kartina Mira | Contacts',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/contacts-eng.html`,
       filename: 'contacts-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Корпоративное кино',
+      title: 'Kartina Mira | Corporate films',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/corporate-eng.html`,
       filename: 'corporate-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Реклама',
+      title: 'Kartina Mira | Advertising',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/market-eng.html`,
       filename: 'market-eng.html',
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Наши услуги',
+      title: 'Kartina Mira | Services',
       favicon: `${favIconPath}/favicon.ico`,
       template: `${htmlPathEng}/servicies-eng.html`,
       filename: 'servicies-eng.html',

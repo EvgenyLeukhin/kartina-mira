@@ -26,8 +26,8 @@ const HOST_URL = 'https://evgenyleukhin.github.io/kartina-mira';
 const TITLE = 'Картина мира';
 const DESCRIPTION = 'Кинокомпания разрабатывает сценарные концепции и обеспечивает полный комплекс услуг в области аудиовизуального производства – от подготовки к съёмкам до post-production любой сложности, включая 3D-анимацию и озвучивание';
 
-const TITLE_ENG = 'Картина мира';
-const DESCRIPTION_ENG = 'Кинокомпания разрабатывает сценарные концепции и обеспечивает полный комплекс услуг в области аудиовизуального производства – от подготовки к съёмкам до post-production любой сложности, включая 3D-анимацию и озвучивание';
+const TITLE_ENG = 'Kartina mira';
+const DESCRIPTION_ENG = 'Kartina Mira Film Company was established in 2010, and specializes in production of live-action films, advertising videos, corporate and documentary films';
 
 const metaInfo = {
   // mobile
@@ -54,7 +54,7 @@ const metaInfo = {
   ogImageWidth:  { property: 'og:image:width',   content: '512' },
   ogSiteName:    { property: 'og:site_name',     content: TITLE },
   ogLocate:      { property: 'og:locate',        content: 'ru_RU' },
-  ogDescription: { property: '10og:description', content: DESCRIPTION },
+  ogDescription: { property: 'og:description',   content: DESCRIPTION },
 
   // google
   itempropName:        { itemprop: 'name',        content: TITLE },
@@ -95,7 +95,7 @@ const metaInfoEng = {
   ogImageWidth:  { property: 'og:image:width',   content: '512' },
   ogSiteName:    { property: 'og:site_name',     content: TITLE_ENG },
   ogLocate:      { property: 'og:locate',        content: 'ru_RU' },
-  ogDescription: { property: '10og:description', content: DESCRIPTION_ENG },
+  ogDescription: { property: 'og:description',   content: DESCRIPTION_ENG },
 
   // google
   itempropName:        { itemprop: 'name',        content: TITLE_ENG },
@@ -253,7 +253,7 @@ module.exports = {
 
     ///////////////////////// ENG //////////////////////////
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Главная',
+      title: 'Kartina Mira | Home',
       template: `${htmlPathEng}/index-eng.html`,
       filename: 'index-eng.html',
       minify: minifyHtmlOptions,
@@ -261,7 +261,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | О нас',
+      title: 'Kartina Mira | About',
       template: `${htmlPathEng}/about-eng.html`,
       filename: 'about-eng.html',
       minify: minifyHtmlOptions,
@@ -269,7 +269,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Игровое кино',
+      title: 'Kartina Mira | Live-action films',
       template: `${htmlPathEng}/cinema-eng.html`,
       filename: 'cinema-eng.html',
       minify: minifyHtmlOptions,
@@ -277,7 +277,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Контакты',
+      title: 'Kartina Mira | Contact us',
       template: `${htmlPathEng}/contacts-eng.html`,
       filename: 'contacts-eng.html',
       minify: minifyHtmlOptions,
@@ -285,7 +285,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Корпоративное кино',
+      title: 'Kartina Mira | Corporate films',
       template: `${htmlPathEng}/corporate-eng.html`,
       filename: 'corporate-eng.html',
       minify: minifyHtmlOptions,
@@ -293,7 +293,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Реклама',
+      title: 'Kartina Mira | Advertising',
       template: `${htmlPathEng}/market-eng.html`,
       filename: 'market-eng.html',
       minify: minifyHtmlOptions,
@@ -301,7 +301,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Картина мира | Наши услуги',
+      title: 'Картина мира | Services',
       template: `${htmlPathEng}/servicies-eng.html`,
       filename: 'servicies-eng.html',
       minify: minifyHtmlOptions,
