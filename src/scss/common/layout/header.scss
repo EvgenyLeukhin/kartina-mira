@@ -30,6 +30,44 @@
     }
   }
 
+  &__langs {
+    // outline: 1px solid red;
+    position: absolute;
+    right: 33px;
+    bottom: 10px;
+    width: 150px;
+    display: flex;
+
+    li {
+      margin-bottom: 0;
+      &.rus { margin-right: 15px; }
+
+      &.active {
+        a {
+          pointer-events: none;
+          cursor: default;
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+
+        img {
+          margin-right: 5px;
+          width: 30px;
+          height: 20px;
+        }
+
+        span {
+          font-size: 16px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
   &__nav {
     li {
       margin-bottom: 5px;
@@ -61,61 +99,20 @@
     margin-right: 108px;
     margin-top: -3px;
     align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: 8.5px;
 
-    & > a {
-      text-transform: uppercase;
-      font-size: 21px;
-      line-height: 27px;
-      letter-spacing: 8.5px;
-
-      &.active {
-        cursor: default;
-        pointer-events: none;
-      }
-    }
-
-
-    .langs {
-      position: absolute;
-      left: 50%;
-      bottom: -50px;
-      width: 150px;
-      display: flex;
-      margin-left: -80px;
-
-      li {
-        margin-bottom: 0;
-        &.rus { margin-right: 15px; }
-
-        &.active {
-          a {
-            pointer-events: none;
-            cursor: default;
-            text-decoration: underline;
-          }
-        }
-
-        a {
-          display: inline-flex;
-          align-items: center;
-
-          img {
-            margin-right: 5px;
-            width: 30px;
-            height: 20px;
-          }
-
-          span {
-            font-size: 16px;
-            line-height: normal;
-          }
-        }
-      }
+    &.active {
+      cursor: default;
+      pointer-events: none;
     }
   }
 
   &__links {
     display: flex;
+    padding-right: 20px;
 
     li {
       margin-left: 40px;
@@ -131,6 +128,11 @@
         }
       }
     }
+  }
+
+  &__langs {
+    right: 50px;
+    bottom: -20px;
   }
 }
 
@@ -171,22 +173,17 @@
   .header {
     &__logo {
       margin-top: 0;
-
-      & > a {
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 8px;
-      }
-
-      .langs {
-        margin-left: 0;
-        left: 0;
-        bottom: -35px;
-      }
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 8px;
     }
 
     &__nav    { display: none; }
     &__links  { display: none; }
+    &__langs {
+      left: 15px;
+      right: auto;
+    }
 
     &__burger {
       display: block;
