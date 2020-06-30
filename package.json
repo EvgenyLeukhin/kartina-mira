@@ -33,6 +33,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "izimodal": "^1.5.1",
     "jquery": "^3.4.1",
     "lozad": "^1.15.0"
