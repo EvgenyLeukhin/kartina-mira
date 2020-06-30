@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
-const htmlPath = `${__dirname}/src/html`;
+const htmlPathRus = `${__dirname}/src/html/rus`;
+const htmlPathEng = `${__dirname}/src/html/eng`;
 const favIconPath = './src/img/icons';
 
 module.exports = {
@@ -73,51 +74,103 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Картина мира | Главная',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/index.html`,
+      template: `${htmlPathRus}/index.html`,
       filename: 'index.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | О нас',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/about.html`,
+      template: `${htmlPathRus}/about.html`,
       filename: 'about.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Игровое кино',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/cinema.html`,
+      template: `${htmlPathRus}/cinema.html`,
       filename: 'cinema.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Контакты',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/contacts.html`,
+      template: `${htmlPathRus}/contacts.html`,
       filename: 'contacts.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Корпоративное кино',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/corporate.html`,
+      template: `${htmlPathRus}/corporate.html`,
       filename: 'corporate.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Реклама',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/market.html`,
+      template: `${htmlPathRus}/market.html`,
       filename: 'market.html',
     }),
 
     new HtmlWebpackPlugin({
       title: 'Картина мира | Наши услуги',
       favicon: `${favIconPath}/favicon.ico`,
-      template: `${htmlPath}/servicies.html`,
+      template: `${htmlPathRus}/servicies.html`,
       filename: 'servicies.html',
     }),
+
+
+    ///////////////////////// ENG //////////////////////////
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Главная',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/index-eng.html`,
+      filename: 'index-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | О нас',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/about-eng.html`,
+      filename: 'about-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Игровое кино',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/cinema-eng.html`,
+      filename: 'cinema-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Контакты',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/contacts-eng.html`,
+      filename: 'contacts-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Корпоративное кино',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/corporate-eng.html`,
+      filename: 'corporate-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Реклама',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/market-eng.html`,
+      filename: 'market-eng.html',
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'Картина мира | Наши услуги',
+      favicon: `${favIconPath}/favicon.ico`,
+      template: `${htmlPathEng}/servicies-eng.html`,
+      filename: 'servicies-eng.html',
+    }),
+    ///////////////////////// ENG //////////////////////////
 
 
     // add jQuery
