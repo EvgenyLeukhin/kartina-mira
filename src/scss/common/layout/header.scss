@@ -31,10 +31,9 @@
   }
 
   &__nav {
-    margin-top: 5px;
-
     li {
       margin-bottom: 5px;
+      padding-left: 20px;
 
       a {
         font-weight: 600;
@@ -94,8 +93,6 @@
             cursor: default;
             text-decoration: underline;
           }
-
-          img { opacity: 1; }
         }
 
         a {
@@ -106,7 +103,6 @@
             margin-right: 5px;
             width: 30px;
             height: 20px;
-            opacity: 0.5;
           }
 
           span {
